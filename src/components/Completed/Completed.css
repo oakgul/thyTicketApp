@@ -1,0 +1,61 @@
+.completed-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+
+    .result-text {
+        width: 100%;
+        padding: 20px;
+        border-bottom: 1px solid gray;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+
+        .cabin-text {
+            font-size: 24px;
+            font-weight: 500;
+        }
+    }
+
+    .payment-text {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+
+        .total-amount-text {
+            font-size: 24px;
+            color: gray;
+            font-weight: 400;
+        }
+
+        .total-amount-currency {
+            font-size: 24px;
+            color: rgb(96, 128, 144);
+            font-weight: 600;
+        }
+
+        .back-button {
+            display: flex;
+            width: 100%;
+            justify-content: flex-end;
+
+            .back-to-start-button {
+                width: 150px;
+                height: 40px;
+                background-color: red;
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 16px;
+                border-radius: 3px;
+                border: none;
+                font-weight: 700;
+                cursor: pointer;
+            }
+        }
+
+        
+    }
+}

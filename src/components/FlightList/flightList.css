@@ -1,0 +1,363 @@
+.flight-list-container {
+
+  .flight-list-table-area {
+    width: 70%;
+    margin: 0 auto;
+
+    .promotion-text {
+      display: flex;
+      flex-direction: column;
+
+      .promotion-text-info {
+        margin: 10px 0;
+        color: gray;
+      }
+    }
+
+    .head-text {
+      width: 150px;
+      height: 40px;
+      background-color: red;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      border-radius: 3px;
+    }
+
+    .destination-text {
+      font-size: 24px;
+      margin-top: 10px;
+      margin-bottom: 40px;
+    }
+
+    .promotion-code {
+      font-size: 16px;
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      margin-bottom: 50px;
+    }
+
+    .list-table {
+      background-color: #f9f9f9;
+      display: flex;
+      flex-direction: column;
+
+      .table-header {
+        width: 100%;
+        height: 50px;
+        background-color: black;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 10px;
+        padding-right: 10px;
+        box-sizing: border-box  ;
+
+        .filter-text {
+          color: white;
+        }
+
+        .filter-buttons {
+          width: 180px;
+          height: 30px;
+          color: white;
+          border: 1px solid white;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 4px;
+          cursor: pointer;
+
+          &:hover {
+            background-color: #696969;
+
+          }
+        }
+      }
+
+      .table-cards {
+        /* width: 99%; */
+        /* height: max-content; */
+        /* border: 1px solid gray; */
+        display: flex;
+        /* padding: 20px; */
+        gap: 10px;
+        box-sizing: border-box;
+        /* background-color: paleturquoise; */
+
+        .table-cards-two {
+          width: 100%;
+        /* height: max-content; */
+        /* border: 1px solid gray; */
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        gap: 10px;
+        box-sizing: border-box;
+        /* background-color: green; */
+
+          .table-cards-three {
+            display: flex;
+            gap: 10px;
+            box-sizing: border-box;
+            /* background-color: gray; */
+            }
+        }
+
+        .destination-info-card {
+          width: 50%;
+          height: 120px;
+          background-color: white;
+          /* background-color: pink; */
+          padding: 20px;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          box-shadow: 0 4px 8px 0 rgba(0,0,0,.05);
+
+          .card-line {
+            width: 50%;
+            height: 1px;
+            background-color: black;
+          }
+
+          .destination-info-card-text {
+            display: flex;
+            flex-direction: column;
+
+            .time {
+              font-size: 32px;
+              font-family: sans-serif;
+            }
+
+            .dest-name, .dest-name-two {
+              font-size: 28px;
+              font-family: sans-serif;
+              color: gray;
+            }
+
+            .dest-name-two {
+              display: flex;
+              justify-content: flex-end;
+            }
+
+            .city {
+              font-size: 24px;
+              font-family: sans-serif;
+              color: gray;
+            }
+            
+            .fly-time-text {
+              font-size: 16px;
+              font-family: sans-serif;
+              color: gray;
+            }
+
+            .economy-radio-button {
+              display: flex;
+              align-items: center;
+
+              .economy-radio-button-text {
+                text-decoration: underline;
+                color: gray;
+              }
+            }
+
+            .customer-pay {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+            }
+            
+          }
+
+          .destination-info-card-fly-time {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-left: 30px;
+          }
+
+          .customer-payment-area {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+
+            .arrow-icon {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+          }
+        }
+
+        .right-side {
+          /* width: 25%; */
+          cursor: pointer;
+          /* background-color: orange; */
+        }
+
+        
+      }
+
+      .fly-cards { 
+        display: flex;
+        justify-content: space-between;
+        box-sizing: border-box;
+
+        .fly-card {
+          width: 32%;
+          height: 300px;
+          border: 1px solid black;
+          position: relative;
+
+          .fly-header {
+            background-color: gainsboro;
+            height: 50px;
+            display: flex;
+            justify-content: space-between;
+            padding-top: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+            border-bottom: 1px solid black;
+
+            .fly-text {
+              font-size: 16px;
+              font-weight: 600;
+            }
+
+            .currency-area {
+
+              .fly-currency {
+                font-size: 12px;
+              }
+
+              .money {
+                font-size: 16px;
+                font-weight: 600;
+              }
+            }
+          }
+
+          .packages {
+            border-bottom: 1px solid gainsboro;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            padding-left: 20px;
+          }
+        }
+        .select-fly-button {
+          width: 100%;
+          background-color: #E81932;
+          height: 50px;
+          color: white;
+          position: absolute;
+          bottom: 0;
+          border: none;
+          cursor: pointer;
+          font-size: 16px;
+          font-weight: 700;
+        }
+
+        .select-fly-button-disabled {
+          width: 100%;
+          background-color: #E81932;
+          height: 50px;
+          color: white;
+          position: absolute;
+          bottom: 0;
+          border: none;
+          cursor: pointer;
+          font-size: 16px;
+          font-weight: 700;
+          opacity: 0.6;
+          cursor: not-allowed;
+          pointer-events: none;
+        }
+
+
+
+        .select-fly-button-disabled {
+          width: 100%;
+          background-color: gray;
+          height: 50px;
+          color: black;
+          position: absolute;
+          bottom: 0;
+          border: none;
+          cursor: pointer;
+          font-size: 16px;
+          font-weight: 700;
+          opacity: 0.6;
+          cursor: not-allowed;
+
+        }
+      }
+    }
+  }
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+

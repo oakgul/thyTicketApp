@@ -1,0 +1,148 @@
+.header-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-bottom: 20px;
+  
+  .hello-text {
+    font-size: 40px;
+  }
+
+  .subtext {
+    font-size: 20px;
+  }
+  
+}
+
+.search-container {
+  width: fit-content;
+  padding: 15px;
+  height: 50px;
+  background-color: rgb(96 105 119 / 60%);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+
+  .inputs-area {
+    display: flex;
+    gap: 20px;
+
+    .city-search-inputs {
+      position: relative;
+
+      .fa-solid {
+        position: absolute;
+        top: 15px;
+        left: 10px;
+      }
+     
+      .destination-inputs {
+        width: 200px;
+        height: 40px;
+        text-indent: 40px;
+        color: #063048;
+        font-weight: 400;
+        font-size: 16px;
+      }
+    }
+    .date-picker {
+      width: 100px;
+      background-color: #404040;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      justify-content: center;
+      color: white;
+      cursor: pointer;
+    }
+
+    .customer-count {
+      width: 100px;
+      background-color: #404040;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      gap: 10px;
+      justify-content: center;
+      color: white;
+      cursor: pointer;
+
+      .person-count {
+        display: flex;
+        justify-content: flex-end;
+        font-size: 16px;
+        padding-right: 10px;
+      }
+
+      .fa-solid {
+        display: flex;
+        justify-content: center;
+      }
+
+      .person-counter {
+        width: 255px;
+        position: absolute;
+        top: 60px;
+        left: -122px;
+        border: 1px solid black;
+        background-color: white;
+        color: black;
+        padding: 20px;
+
+        .arrow {
+          width: 10px;
+          height: 10px;
+          background-color: white;
+          position: relative;
+          top: -25px;
+          left: 160px;
+          rotate: 45deg;
+        }
+
+        .counter-header {
+          color: gray;
+        }
+
+        .radio-group {
+          font-size: 12px;
+          color: gray;
+          margin-top: 20px;
+          margin-bottom: 20px;
+        }
+
+        .count-buttons-area {
+          display: flex;
+          gap: 10px;
+          justify-content: space-between;
+
+          .counter {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+
+            .count-number {
+              font-size: 12px;
+            }
+
+            .counter-buttons {
+              width: 30px;
+              height: 30px;
+              border: none;
+              border-radius: 4px;
+              cursor: pointer;
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+    .arrow-button {
+      width: 40px;
+      border: none;
+      background-color: red;
+      cursor: pointer;
+    }
+  }
+}
